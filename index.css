@@ -1,1 +1,268 @@
-/* Put your style information here! */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@900&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@600&display=swap');
+body{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:#F7FCFE;
+}
+header{
+  display: flex;
+  max-width: 100%;
+  background-color: #020100;
+  padding: 10px;
+  flex-direction: row;
+  align-self: stretch;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+#logo{
+  max-height: 13vh;
+  padding-left: 10px;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.button {
+  padding: 10px;
+  margin-left: 4px;
+  color: white;
+  font-size: 1.3em;
+}
+.button:hover {
+  color: #943932;
+  border-bottom-color: #943932;
+  border-bottom-style: solid;
+}
+#skates {
+  display: flex;
+  width: 100%;
+  opacity: 70%;
+}
+.banner{
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: 'Commissioner', sans-serif;
+
+}
+.caption {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  position: absolute;
+  text-align: left;
+  align-self: center;
+}
+
+/* potentially remove because you don't know where you're going to put it yet */
+
+.closed{
+  display: flex;
+  flex-direction: row;
+  background-color: #943932;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3vw;
+  font-family: 'Commissioner', sans-serif;
+
+}
+#warning {
+  max-height: 3vw;
+  max-width: auto;
+}
+
+/* hours, etc.  */
+.general_info {
+  font-family: 'Lato', sans-serif;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+/* special stories and all */
+.featured_info{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: flex-start;
+  font-size: 1.5em;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.info_pics {
+  width: 24em;
+  color: white;
+}
+
+a{
+  color: white;
+}
+.row_class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides1 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: .8em;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot1 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 930px) {
+  header{
+    flex-direction: column;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .info_pics {
+    max-height: 50vw;
+    max-width: auto;
+  }
+
+}
+
+@media only screen and (max-width: 460px) {
+  header{
+    flex-direction: column;
+  }
+  .general_info {
+    flex-direction: column;
+    align-self: center;
+    justify-content: flex-start;
+  }
+}
