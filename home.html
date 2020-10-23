@@ -8,34 +8,34 @@
     <script src="slideshow.js"></script>
   </head>
   <body>
-     <div class="closed">
-      <img id="warning" src="warning.png" alt="warning symbol">
-      CLOSED DUE TO COVID-19
-      <img id="warning" src="warning.png" alt="warning symbol">
-    </div>
+
     <header>
       <img id="logo"src="poster.png" alt="black and white logo that reads 'church of 8 wheels'">
       <nav class="menu">
         <div class="button">Home</div>
         <div class="button">Schedule</div>
         <div class="button">Lessons</div>
-        <div class="button">Videos</div>
-        <div class="button">News</div>
+        <div class="button">Media</div>
         <div class="button">Contact</div>
       </nav>
     </header>
-
+    <div class="closed">
+      CLOSED DUE TO COVID-19
+    </div>
     <div class="banner">
-      <img id="skates" src="skates.jpg" alt="roller skates on shelf">
-      <div class="caption">
-        <h1 style="font-size: 4vw;">CHURCH OF 8 WHEELS! <br>
-          <span style="font-size: 3vw; font-weight: normal;" >(415) 752-1967
-        </h1>
+      <div class="wrapper">
+        <div class="title">
+          CHURCH OF 8 WHEELS
+        </div>
+        <div class="subtitle">
+          $10 Admission • $5 Skates
+        </div>
       </div>
+
     </div>
     <div class="general_info">
       <div class="details">
-        <h3>Address:</h3>
+        <h3 style="font-weight: 600;">Address:</h3>
         <p>554 Filmore St. @ Fell St. <br> San Francisco, CA 94117</p>
         <div class="row_class">
           <img style="max-height:1em; margin-right: 3px;"src="pin.png" alt="location pin logo">
@@ -43,12 +43,7 @@
         </div>
       </div>
       <div class="details">
-        <h3>Hours of Operation:</h3>
-        <p>Open Friday-Sunday</p>
-        <a href="http://www.churchof8wheels.com/schedule.html">See Full Schedule</a>
-      </div>
-      <div class="details">
-        <h3>Contact: </h3>
+        <h3 style="font-weight: 600;">Contact: </h3>
         <div class="row_class">
           <img style="max-height:1em; margin-right: 6px;"src="email.png" alt="email logo">
           <p><a href="mailto:rose.miles5@gmail.com">rose.miles5@gmail.com</a></p>
@@ -58,77 +53,58 @@
           (415) 752-1967
         </div>
       </div>
+      <div class="details">
+        <h3 style="font-weight: 600;">Hours of Operation:</h3>
+        <p>
+          Friday 5-7PM (all ages) <br>
+          Friday 8-12AM (adults) <br>
+          Saturday 3-5PM (families) <br>
+          Saturday 7-11PM (adults) <br>
+          Sunday 7-10PM (adults) <br>
+        </p>
+        <div class="row_class">
+          <img style="max-height:1em; margin-right: 6px;"src="calendar.jpeg" alt="calendar logo">
+          <p><a href="http://www.churchof8wheels.com/schedule.html">See Full Schedule</a></p>
+        </div>
+      </div>
     </div>
     <div class="featured_info">
       <h2>Featured Events and Videos</h2>
-      <div class="row_class">
-        <div>
-
-          <div class="slideshow-container">
-            <!-- TAKEN FROM W3 SCHOOLS -->
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <img class="info_pics" src="flesson.jpg" alt="learn to skate. lessons every friday">
-              <div class="text"><a href="http://www.cora.org/skatelessons.html">Lessons Details</a></div>
-            </div>
-
-            <div class="mySlides fade">
-              <img class="info_pics" src="artist.jpg" alt="woman dressed in white on skates">
-              <div class="text"> <a href="http://aimeebruckner.com/Artwork">See art designs for skaters</a> </div>
-            </div>
-
-            <div class="mySlides fade">
-              <img class="info_pics" src="GoldenGateParkObservationWheel.jpg" alt="ferris wheel in middle of park">
-              <div class="text"> <a href="https://www.goldengatepark150.com/">The Golden Gate 150th Birthday Celebration</a> </div>
-            </div>
-            <div class="mySlides fade">
-              <img class="info_pics" src="target1S.jpg" alt="roller skating rink in a park with many skaters">
-              <div class="text"> <a href="http://www.churchof8wheels.com/mobilerollerrink.html"> Order our Pop-up Roller Rink</a> </div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div style="display:flex; justify-content:center; flex-direction:column;">
+        <div class="slideshow-container">
+          <!-- TAKEN FROM W3 SCHOOLS -->
+          <!-- Full-width images with number and caption text -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <div class="mySlides fade">
+            <img class="info_pics" src="flesson.jpg" alt="learn to skate. lessons every friday">
+            <div class="text"><a href="http://www.cora.org/skatelessons.html">Lessons Details</a></div>
           </div>
-          <br>
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
+
+          <div class="mySlides fade">
+            <img class="info_pics" src="artist.jpg" alt="woman dressed in white on skates">
+            <div class="text"> <a href="http://aimeebruckner.com/Artwork">See art designs for skaters</a> </div>
           </div>
+
+          <div class="mySlides fade">
+            <img class="info_pics" src="GoldenGateParkObservationWheel.jpg" alt="ferris wheel in middle of park">
+            <div class="text"> <a href="https://www.goldengatepark150.com/">The Golden Gate 150th Birthday Celebration</a> </div>
+          </div>
+          <div class="mySlides fade">
+            <img class="info_pics" src="target1S.jpg" alt="roller skating rink in a park with many skaters">
+            <div class="text"> <a href="http://www.churchof8wheels.com/mobilerollerrink.html"> Order our Pop-up Roller Rink</a> </div>
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-
-        <div>
-          <div class="slideshow-container">
-            <div class="mySlides1 fade">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/14fIaHt2Pts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <!-- <iframe width="560px" height="315px" src="https://www.youtube.com/embed/qMhQpi7gobg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            </div>
-            <div class="mySlides1 fade">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/qMhQpi7gobg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="mySlides1 fade">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/uWSTlDXDNXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="mySlides1 fade">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/uWSTlDXDNXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides1(1)">&#10095;</a>
-          </div>
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot1" onclick="currentSlide1(1)"></span>
-            <span class="dot1" onclick="currentSlide1(2)"></span>
-            <span class="dot1" onclick="currentSlide1(3)"></span>
-            <span class="dot1" onclick="currentSlide1(4)"></span>
-          </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
         </div>
       </div>
-
-
     </div>
   </body>
   <script src="slideshow.js"></script>
